@@ -9,7 +9,7 @@ public class guessNumber {
     }
 
     public int modChoose(String input, int min, int max) {
-        //input in android is a button
+        //input in android studio is a button
         int result = 0;
         if (input == "Easy mode") {
             min = 1;
@@ -30,6 +30,7 @@ public class guessNumber {
     }
 
     public static void theme(String color){
+        // color in android studio is a button
         if (color.equals("ocean")){
             // change color to blue
         }else if (color.equals("forest")){
@@ -44,12 +45,11 @@ public class guessNumber {
 
     public String guess(int input){
         input = 0;
-        int c = 0;
         while ( input>=0){
-            if (input == modChoose("", 2, 3))
-            ;
+            if (input == modChoose){
+            
         }
-        return null;
+        return ture;
     }
 
 }
