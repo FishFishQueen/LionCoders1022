@@ -43,13 +43,31 @@ public class guessNumber {
     }
 
 
-    public String guess(int input){
+    public String guess(String mod,int input){
+        //in Android Studio it should only need to consider the matching of user input numbers and random numbers.
         input = 0;
-        while ( input>=0){
-            if (input == modChoose){
-            
+        int min = 0;
+        int max = 0;
+        if (mod.equals("Easy mode")){
+            min = 1;
+            max = 10;
+            int guessTime = 8;
+        }else if (mod.equals("Normal mode")){
+            min = 1;
+            max = 25;
+            int guessTime = 8;
+        }else if (mod.equals("Hard mode")){
+            min = 1;
+            max = 50;
+            int guessTime = 5;            
+        for (int t = 0;t<=guessTime;t++){
+            if (input == modChoose(mod,min,max)){
+                System.out.println("You win");
+            }else {
+                System.out.println("You lose");
+            }
         }
-        return ture;
+        }
+        return null;
     }
-
 }
