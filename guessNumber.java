@@ -70,4 +70,14 @@ public class guessNumber {
         }
         return null;
     }
+    
+    public String continueorStop(String input){
+        if (input.equals("continue")){
+            //The game should Start over but record the score
+        }else if (input.equals("Stop")){
+            //The game will end immediately and the score will be displayed.
+        }
+        return null;//return null just for now, there will have result when connect to Android Studio
+    }
+
 }
